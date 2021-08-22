@@ -112,7 +112,17 @@ header {
 }
 
 .pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 144px 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pricing h4 {
@@ -244,8 +254,94 @@ header {
   text-align: center;
 }
 
+.email img {
+  position: absolute;
+  width: 430px;
+  height: 80px;
+  right: 0;
+}
+
 .email h3 {
   font-size: 24px;
   margin: 0 23.5px 31px;
+}
+
+.email .email__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.email .email__container h6 {
+  font-size: 12px;
+  line-height: 25px;
+  color: #ff2965;
+  position: absolute;
+  left: 38px;
+}
+
+.email .email__container .email--border {
+  border-radius: 30px;
+}
+
+.email .email__container .email__container--1 {
+  width: 327px;
+  height: 48px;
+  background-color: #093f68;
+  text-align: left;
+  text-indent: 18px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.email .email__container .email__container--2 {
+  background-color: #3ee9e5;
+  color: #093f68;
+  font-size: 15px;
+  font-weight: 800;
+  margin-top: 24px;
+  width: 327px;
+  height: 48px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.email .email__container .email__container--2:hover {
+  background-color: #080c20;
+  color: #ffffff;
+  border: 3px solid #3ee9e5;
+}
+
+input {
+  border-style: none;
+}
+
+.border--success {
+  visibility: visible;
+  border-style: solid;
+  border: 2px solid #3ee9e5;
+}
+
+.border--error {
+  visibility: visible;
+  border-style: solid;
+  border: 2px solid #ff2965;
 }
 /*# sourceMappingURL=styles.css.map */

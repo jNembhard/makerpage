@@ -111,7 +111,10 @@ header {
 }
 
 .pricing {
+  display: flex;
+  flex-direction: column;
   margin: 144px 24px;
+  align-items: center;
   h4 {
     font-size: 18px;
   }
@@ -235,8 +238,79 @@ header {
   margin: 0 23.5px 164px;
   text-align: center;
 
+  img {
+    position: absolute;
+    width: 430px;
+    height: 80px;
+    right: 0;
+  }
+
   h3 {
     font-size: 24px;
     margin: 0 23.5px 31px;
   }
+
+  .email__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h6 {
+      font-size: 12px;
+      line-height: 25px;
+      color: $error-color;
+      position: absolute;
+      left: 38px;
+    }
+
+    .email--border {
+      border-radius: 30px;
+    }
+
+    .email__container--1 {
+      width: 327px;
+      height: 48px;
+      background-color: $secondary-color;
+      text-align: left;
+      text-indent: 18px;
+      font-weight: $font-bold;
+      color: $title-color;
+    }
+
+    .email__container--2 {
+      background-color: $primary-color;
+      color: $secondary-color;
+      font-size: 15px;
+      font-weight: $font-bold;
+      margin-top: 24px;
+      width: 327px;
+      height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background-color: $bg-color;
+        color: $title-color;
+        border: 3px solid $primary-color;
+      }
+    }
+  }
+}
+
+input {
+  border-style: none;
+}
+
+.border--success {
+  visibility: visible;
+  border-style: solid;
+  border: 2px solid $primary-color;
+}
+
+.border--error {
+  visibility: visible;
+  border-style: solid;
+  border: 2px solid $error-color;
 }
