@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap");
+
+$font: "Manrope", sans-serif;
+$font-bold: 800;
+$font-medium: 500;
+
+$primary-color: #3ee9e5;
+$secondary-color: #093f68;
+$bg-color: #080c20;
+$title-color: #ffffff;
+$paragraph-color: #777f98;
+$error-color: #ff2965;
+
+$screen-md-min: 768px;
+$screen-lg-min: 1440px;
+
+@mixin tablet {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}

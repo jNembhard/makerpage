@@ -1,0 +1,12 @@
+#Design files
+*.sketch
+*.fig
+*.xd
+
+# DS_Store
+.DS_Store
+.prettierignore
+
+preview.jpg
+
+/maker-sketch

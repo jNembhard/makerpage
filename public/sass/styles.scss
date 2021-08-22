@@ -1,0 +1,242 @@
+@import "_global.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: $font;
+  color: $paragraph-color;
+  background-color: $bg-color;
+  font-weight: $font-medium;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: $font-bold;
+    color: $title-color;
+  }
+}
+
+header {
+  margin: 40px 128px 65px;
+}
+
+.hero {
+  overflow: hidden;
+  img:nth-child(1) {
+    width: 410px;
+    height: 233px;
+    margin: 0 35px 37.5px 0;
+    line-height: 40px;
+  }
+
+  h1 {
+    font-size: 32px;
+    text-align: center;
+    span {
+      color: $primary-color;
+    }
+  }
+
+  p {
+    margin: 24px 24px 32px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  img:nth-child(4) {
+    width: 26px;
+    height: 42px;
+    margin: 0 175px 144px 174px;
+  }
+}
+
+.illustrations {
+  display: flex;
+  flex-direction: column;
+  div {
+    text-align: center;
+    img {
+      background-color: $secondary-color;
+      border-radius: 43px;
+      margin: 56px 128px 32px;
+    }
+
+    h4 {
+      font-size: 18px;
+      margin: 0 24px;
+    }
+
+    p {
+      margin: 11px 24px 0 24px;
+      font-size: 15px;
+      line-height: 25px;
+    }
+
+    &:nth-child(1) {
+      img {
+        width: 66px;
+        height: 80px;
+        padding: 22px 24px 22px 30px;
+      }
+    }
+
+    &:nth-child(2) {
+      img {
+        width: 56px;
+        height: 67px;
+        padding: 28px 32px;
+      }
+    }
+
+    &:nth-child(3) {
+      img {
+        width: 60px;
+        height: 71px;
+        padding: 27px 30px;
+      }
+    }
+
+    &:nth-child(4) {
+      img {
+        width: 78px;
+        height: 56px;
+        padding: 34px 21px;
+      }
+    }
+  }
+}
+
+.pricing {
+  margin: 144px 24px;
+  h4 {
+    font-size: 18px;
+  }
+
+  .pricing__title {
+    text-align: center;
+    h2 {
+      font-size: 24px;
+      margin: 0 45px 27px;
+    }
+
+    p {
+      margin: 0 0 56px;
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+
+  img:nth-child(1) {
+    padding-left: 30px;
+    margin-bottom: -27px;
+  }
+
+  .pricing__dip {
+    margin-bottom: 32px;
+
+    div {
+      width: 327px;
+      height: 436px;
+      background-color: $secondary-color;
+      border-radius: 10px;
+
+      h4 {
+        padding: 49px 190px 19px 30px;
+      }
+
+      p {
+        margin: 0 30px 26px;
+      }
+
+      h2 {
+        font-size: 40px;
+        margin: 0 210px 19px 30px;
+      }
+
+      ul {
+        margin: 0 20px 32px;
+        padding-left: 24px;
+        li {
+          color: $title-color;
+          font-size: 15px;
+          line-height: 25px;
+          list-style-image: url("../assets/icons/icon-check-free.svg");
+          padding-left: 8px;
+          padding-bottom: 12px;
+        }
+      }
+    }
+  }
+
+  .pricing__dive {
+    color: $secondary-color;
+
+    img {
+      padding-left: 37px;
+      margin-bottom: -35px;
+    }
+
+    div {
+      width: 327px;
+      height: 448px;
+      background-color: $primary-color;
+
+      border-radius: 10px;
+
+      h4 {
+        padding: 49px 190px 19px 30px;
+        color: $secondary-color;
+        font-size: 18px;
+      }
+
+      p {
+        margin: 0 30px 26px;
+        color: $secondary-color;
+        font-size: 15px;
+        line-height: 25px;
+      }
+
+      h2 {
+        display: flex;
+        align-items: center;
+        color: $secondary-color;
+        font-size: 40px;
+        margin: 0 210px 19px 30px;
+
+        span {
+          font-size: 15px;
+          font-weight: $font-medium;
+          margin-left: 7.5px;
+          color: $secondary-color;
+        }
+      }
+
+      ul {
+        margin: 0 20px 32px;
+        padding-left: 24px;
+        li {
+          color: $secondary-color;
+          font-size: 15px;
+          line-height: 25px;
+          list-style-image: url("../assets/icons/icon-check.svg");
+          padding-left: 8px;
+          padding-bottom: 12px;
+        }
+      }
+    }
+  }
+}
+
+.email {
+  margin: 0 23.5px 164px;
+  text-align: center;
+
+  h3 {
+    font-size: 24px;
+    margin: 0 23.5px 31px;
+  }
+}

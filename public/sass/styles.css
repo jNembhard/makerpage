@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+  color: #777f98;
+  background-color: #080c20;
+  font-weight: 500;
+}
+
+body h1,
+body h2,
+body h3,
+body h4 {
+  font-weight: 800;
+  color: #ffffff;
+}
+
+header {
+  margin: 40px 128px 65px;
+}
+
+.hero {
+  overflow: hidden;
+}
+
+.hero img:nth-child(1) {
+  width: 410px;
+  height: 233px;
+  margin: 0 35px 37.5px 0;
+  line-height: 40px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.hero h1 span {
+  color: #3ee9e5;
+}
+
+.hero p {
+  margin: 24px 24px 32px;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.hero img:nth-child(4) {
+  width: 26px;
+  height: 42px;
+  margin: 0 175px 144px 174px;
+}
+
+.illustrations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.illustrations div {
+  text-align: center;
+}
+
+.illustrations div img {
+  background-color: #093f68;
+  border-radius: 43px;
+  margin: 56px 128px 32px;
+}
+
+.illustrations div h4 {
+  font-size: 18px;
+  margin: 0 24px;
+}
+
+.illustrations div p {
+  margin: 11px 24px 0 24px;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.illustrations div:nth-child(1) img {
+  width: 66px;
+  height: 80px;
+  padding: 22px 24px 22px 30px;
+}
+
+.illustrations div:nth-child(2) img {
+  width: 56px;
+  height: 67px;
+  padding: 28px 32px;
+}
+
+.illustrations div:nth-child(3) img {
+  width: 60px;
+  height: 71px;
+  padding: 27px 30px;
+}
+
+.illustrations div:nth-child(4) img {
+  width: 78px;
+  height: 56px;
+  padding: 34px 21px;
+}
+
+.pricing {
+  margin: 144px 24px;
+}
+
+.pricing h4 {
+  font-size: 18px;
+}
+
+.pricing .pricing__title {
+  text-align: center;
+}
+
+.pricing .pricing__title h2 {
+  font-size: 24px;
+  margin: 0 45px 27px;
+}
+
+.pricing .pricing__title p {
+  margin: 0 0 56px;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.pricing img:nth-child(1) {
+  padding-left: 30px;
+  margin-bottom: -27px;
+}
+
+.pricing .pricing__dip {
+  margin-bottom: 32px;
+}
+
+.pricing .pricing__dip div {
+  width: 327px;
+  height: 436px;
+  background-color: #093f68;
+  border-radius: 10px;
+}
+
+.pricing .pricing__dip div h4 {
+  padding: 49px 190px 19px 30px;
+}
+
+.pricing .pricing__dip div p {
+  margin: 0 30px 26px;
+}
+
+.pricing .pricing__dip div h2 {
+  font-size: 40px;
+  margin: 0 210px 19px 30px;
+}
+
+.pricing .pricing__dip div ul {
+  margin: 0 20px 32px;
+  padding-left: 24px;
+}
+
+.pricing .pricing__dip div ul li {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 25px;
+  list-style-image: url("../assets/icons/icon-check-free.svg");
+  padding-left: 8px;
+  padding-bottom: 12px;
+}
+
+.pricing .pricing__dive {
+  color: #093f68;
+}
+
+.pricing .pricing__dive img {
+  padding-left: 37px;
+  margin-bottom: -35px;
+}
+
+.pricing .pricing__dive div {
+  width: 327px;
+  height: 448px;
+  background-color: #3ee9e5;
+  border-radius: 10px;
+}
+
+.pricing .pricing__dive div h4 {
+  padding: 49px 190px 19px 30px;
+  color: #093f68;
+  font-size: 18px;
+}
+
+.pricing .pricing__dive div p {
+  margin: 0 30px 26px;
+  color: #093f68;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.pricing .pricing__dive div h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #093f68;
+  font-size: 40px;
+  margin: 0 210px 19px 30px;
+}
+
+.pricing .pricing__dive div h2 span {
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 7.5px;
+  color: #093f68;
+}
+
+.pricing .pricing__dive div ul {
+  margin: 0 20px 32px;
+  padding-left: 24px;
+}
+
+.pricing .pricing__dive div ul li {
+  color: #093f68;
+  font-size: 15px;
+  line-height: 25px;
+  list-style-image: url("../assets/icons/icon-check.svg");
+  padding-left: 8px;
+  padding-bottom: 12px;
+}
+
+.email {
+  margin: 0 23.5px 164px;
+  text-align: center;
+}
+
+.email h3 {
+  font-size: 24px;
+  margin: 0 23.5px 31px;
+}
+/*# sourceMappingURL=styles.css.map */
