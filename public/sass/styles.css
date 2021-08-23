@@ -207,7 +207,7 @@
 }
 
 @media (min-width: 768px) {
-  .illustrations #in {
+  .illustrations .in {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -220,7 +220,7 @@
     text-align: left;
     padding-left: 80px;
   }
-  .illustrations #out {
+  .illustrations .out {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -249,7 +249,7 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .illustrations #in {
+  .illustrations .in {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -259,7 +259,7 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .illustrations #out {
+  .illustrations .out {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -777,6 +777,7 @@ body {
   color: #777f98;
   background-color: #080c20;
   font-weight: 500;
+  overflow-x: hidden;
 }
 
 body h1,
@@ -806,5 +807,20 @@ header img {
   header {
     margin: 81px 1155px 114px 165px;
   }
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #777f98;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

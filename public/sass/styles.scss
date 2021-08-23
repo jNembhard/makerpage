@@ -15,6 +15,7 @@ body {
   color: $paragraph-color;
   background-color: $bg-color;
   font-weight: $font-medium;
+  overflow-x: hidden;
 
   h1,
   h2,
@@ -38,4 +39,13 @@ header {
       margin: 81px 1155px 114px 165px;
     }
   }
+}
+
+footer {
+  display: flex;
+  color: $paragraph-color;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 20px;
 }
