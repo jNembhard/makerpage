@@ -27,8 +27,15 @@ body {
 
 header {
   margin: 40px 128px 65px;
-
+  img {
+    width: 120px;
+    height: 35px;
+  }
   @include tablet {
     margin: 48px 690px 70px 39px;
+
+    @include desktop {
+      margin: 81px 1155px 114px 165px;
+    }
   }
 }

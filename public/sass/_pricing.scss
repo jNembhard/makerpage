@@ -5,6 +5,9 @@
   align-items: center;
   @include tablet {
     margin: 144px 98px;
+    @include desktop {
+      margin: 200px 450px;
+    }
   }
   h4 {
     font-size: 18px;
@@ -15,6 +18,10 @@
     h2 {
       font-size: 24px;
       margin: 0 45px 27px;
+
+      @include desktop {
+        font-size: 32px;
+      }
     }
 
     p {
@@ -29,8 +36,18 @@
     margin-bottom: -27px;
   }
 
+  .pricing__container {
+    @include desktop {
+      display: flex;
+    }
+  }
+
   .pricing__dip {
     margin-bottom: 32px;
+    @include desktop {
+      margin-right: 30px;
+      margin-top: 24px;
+    }
 
     div {
       width: 327px;
@@ -40,15 +57,22 @@
 
       @include tablet {
         width: 445px;
-        height: 448px;
+        height: 425px;
       }
 
       h4 {
         padding: 49px 190px 19px 30px;
+        line-height: 25px;
       }
 
       p {
         margin: 0 30px 26px;
+        line-height: 25px;
+        color: mix($title-color, $paragraph-color);
+
+        @include desktop {
+          margin: 0 0 26px 30px;
+        }
       }
 
       h2 {
@@ -86,7 +110,7 @@
 
       @include tablet {
         width: 445px;
-        height: 482px;
+        height: 449px;
       }
 
       border-radius: 10px;
@@ -95,6 +119,7 @@
         padding: 49px 190px 19px 30px;
         color: $secondary-color;
         font-size: 18px;
+        line-height: 25px;
       }
 
       p {
@@ -102,6 +127,10 @@
         color: $secondary-color;
         font-size: 15px;
         line-height: 25px;
+
+        @include desktop {
+          margin: 0 34px 26px 33px;
+        }
       }
 
       h2 {

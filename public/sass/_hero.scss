@@ -12,12 +12,19 @@
     @include tablet {
       display: flex;
       margin-bottom: 161px;
+
+      @include desktop {
+        margin-bottom: 209px;
+      }
     }
   }
 
   .hero__container {
     @include tablet {
       margin: 0 27px;
+      @include desktop {
+        margin-top: 64px;
+      }
     }
   }
 
@@ -38,6 +45,11 @@
       overflow: hidden;
       display: inherit;
     }
+    @include desktop {
+      width: 408px;
+      height: 459px;
+      overflow: visible;
+    }
   }
 
   .hero__squiggle {
@@ -47,7 +59,15 @@
       position: absolute;
       width: 386px;
       height: 268px;
-      margin: 0 30px 55px;
+      margin-left: 80px;
+      top: 130px;
+
+      @include desktop {
+        width: 544.31px;
+        height: 377.98px;
+        top: 200px;
+        margin-left: 10%;
+      }
     }
   }
 
@@ -63,6 +83,10 @@
 
     @include tablet {
       margin: 0 10px;
+      @include desktop {
+        font-size: 48px;
+        line-height: 56px;
+      }
     }
   }
 
@@ -76,6 +100,9 @@
 
     @include tablet {
       margin: 24px 10px 32px;
+      @include desktop {
+        margin: 24px 10px 64px;
+      }
     }
   }
 
@@ -85,6 +112,11 @@
       display: inherit;
       overflow: hidden;
     }
+    @include desktop {
+      width: 396px;
+      height: 444px;
+      overflow: visible;
+    }
   }
 
   .hero__scroll {
@@ -93,10 +125,13 @@
     margin: 0 175px 144px 174px;
 
     @include tablet {
-      margin-top: 20px;
       margin-bottom: 0;
       flex-direction: column;
       margin-top: -100px;
+      @include desktop {
+        margin-top: -320px;
+        padding-bottom: 209px;
+      }
     }
   }
 }

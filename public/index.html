@@ -9,7 +9,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/favicon-32x32.png"
+      href="./assets/favicon-maker.png"
     />
     <link rel="stylesheet" href="sass/styles.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -62,7 +62,7 @@
       </div>
 
       <div class="illustrations">
-        <div id="in">
+        <div id="in" class="illustrations__passion">
           <img
             src="assets/illustrations/illustration-passions.svg"
             alt="Passions"
@@ -70,8 +70,12 @@
           <div>
             <h4>Indulge your passions</h4>
             <p>
-              Your passions shouldn't be just for the weekend.<br />Earn a
-              living doing what you love.
+              Your passions shouldn't be just for<br
+                class="illustrations__desktop"
+              />
+              the weekend.<br class="illustrations__tablet" />Earn a living
+              doing<br class="illustrations__desktop" />
+              what you love.
             </p>
           </div>
         </div>
@@ -83,8 +87,11 @@
           <div>
             <h4>Gain financial freedom</h4>
             <p>
-              Start making money work for you.There’s<br />nothing quite like
-              earning while you sleep.
+              Start making money work for you.<br
+                class="illustrations__desktop"
+              />There’s<br class="illustrations__tablet" />nothing quite like
+              earning<br class="illustrations__desktop" />
+              while you sleep.
             </p>
           </div>
         </div>
@@ -96,8 +103,10 @@
           <div>
             <h4>Choose your lifestyle</h4>
             <p>
-              Own your daily schedule. Fancy a lie-in? Go for it!<br />Take
-              charge of your week.
+              Own your daily schedule. Fancy a<br
+                class="illustrations__desktop"
+              />lie-in? Go for it!<br class="illustrations__tablet" />Take
+              charge of your<br class="illustrations__desktop" />week.
             </p>
           </div>
         </div>
@@ -109,8 +118,10 @@
           <div>
             <h4>Work from anywhere</h4>
             <p>
-              Selling online means not being pinned down.<br />Want to work AND
-              travel? Go for it!
+              Selling online means not being<br
+                class="illustrations__desktop"
+              />pinned down.<br class="illustrations__tablet" />Want to work
+              AND<br class="illustrations__desktop" />travel? Go for it!
             </p>
           </div>
         </div>
@@ -124,38 +135,40 @@
             always affordable, and it’s completely free to get started.
           </p>
         </div>
-        <div class="pricing__dip">
-          <img src="assets/icons/icon-free.svg" alt="free icon" />
-          <div>
-            <h4>Dip your toe</h4>
-            <p>
-              Just getting started? No problem at all! Our free plan will take
-              you a long way.
-            </p>
-            <h2>Free</h2>
-            <ul>
-              <li>Unlimited products</li>
-              <li>Basic analytics</li>
-              <li>Limited marketplace exposure</li>
-              <li>10% fee per transaction</li>
-            </ul>
+        <div class="pricing__container">
+          <div class="pricing__dip">
+            <img src="assets/icons/icon-free.svg" alt="free icon" />
+            <div>
+              <h4>Dip your toe</h4>
+              <p>
+                Just getting started? No problem at all! Our free plan will take
+                you a long way.
+              </p>
+              <h2>Free</h2>
+              <ul>
+                <li>Unlimited products</li>
+                <li>Basic analytics</li>
+                <li>Limited marketplace exposure</li>
+                <li>10% fee per transaction</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="pricing__dive">
-          <img src="assets/icons/icon-paid.svg" alt="free icon" />
-          <div>
-            <h4>Dive right in</h4>
-            <p>
-              Ready for the big time? Our paid plan will help you take your
-              business to the next level.
-            </p>
-            <h2>$25.00 <span>/month</span></h2>
-            <ul>
-              <li>Custom domain</li>
-              <li>Advanced analytics and reports</li>
-              <li>High marketplace visibility</li>
-              <li>5% fee per transaction</li>
-            </ul>
+          <div class="pricing__dive">
+            <img src="assets/icons/icon-paid.svg" alt="free icon" />
+            <div>
+              <h4>Dive right in</h4>
+              <p>
+                Ready for the big time? Our paid plan will help you take your
+                business to the next level.
+              </p>
+              <h2>$25.00 <span>/month</span></h2>
+              <ul>
+                <li>Custom domain</li>
+                <li>Advanced analytics and reports</li>
+                <li>High marketplace visibility</li>
+                <li>5% fee per transaction</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -163,13 +176,15 @@
       <form class="email" onsubmit="return false">
         <h3>Get notified when we launch</h3>
         <div class="email__container">
-          <input
-            id="email"
-            placeholder="email Address"
-            class="email__container--1 email--border"
-            contenteditable="true"
-          />
-          <h6 id="result"></h6>
+          <div class="email__container--input">
+            <input
+              id="email"
+              placeholder="email Address"
+              class="email__container--1 email--border"
+              contenteditable="true"
+            />
+            <h6 id="result"></h6>
+          </div>
           <div
             class="email__container--2 email--border"
             type="submit"

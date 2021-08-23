@@ -5,12 +5,18 @@
   background-image: url("../assets/squiggles/bg-footer-squiggle.svg");
   background-repeat: no-repeat;
   background-position: top 0 center;
-  background-size: 156% auto;
+  background-size: 150% auto;
+  border: 0.1px solid transparent;
 
   @include tablet {
-    background-position: top 0 right -120px;
-    background-size: 156% auto;
-    border: 1px solid transparent;
+    background-position: top 0 right 0;
+    background-size: 109% auto;
+
+    @include desktop {
+      background-position: top 4px right 0;
+      background-size: 100%;
+      padding-top: 60px;
+    }
   }
 
   h3 {
@@ -18,6 +24,10 @@
     margin: 0 23.5px 31px;
     @include tablet {
       margin-top: 40px;
+
+      @include desktop {
+        font-size: 32px;
+      }
     }
   }
 
@@ -27,23 +37,24 @@
     align-items: center;
     justify-content: center;
 
+    .email__container--input {
+      flex-direction: column;
+
+      h6 {
+        position: absolute;
+        font-size: 12px;
+        line-height: 25px;
+        color: $error-color;
+        padding-left: 20px;
+        text-align: center;
+        z-index: 1;
+        margin-top: -3px;
+      }
+    }
+
     @include tablet {
       flex-direction: row;
       margin-bottom: 30px;
-    }
-
-    h6 {
-      font-size: 12px;
-      line-height: 25px;
-      color: $error-color;
-      position: absolute;
-      left: 58px;
-      z-index: 1;
-
-      @include tablet {
-        left: 165px;
-        margin-top: 80px;
-      }
     }
 
     .email--border {
@@ -58,6 +69,11 @@
       text-indent: 18px;
       font-weight: $font-bold;
       color: $title-color;
+
+      @include tablet {
+        width: 320px;
+        height: 48px;
+      }
     }
 
     .email__container--2 {
@@ -74,10 +90,15 @@
       cursor: pointer;
 
       @include tablet {
+        position: relative;
         width: 140px;
         height: 48px;
         margin-top: 0;
         margin-left: 16px;
+
+        &:after {
+          margin-bottom: 100px;
+        }
       }
 
       &:hover {
