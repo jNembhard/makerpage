@@ -19,64 +19,100 @@
 
   <body>
     <main>
-      <header><img src="assets/logo.svg" alt="Maker Logo" /></header>
+      <header><img src="assets/logo.svg" alt="maker logo" /></header>
       <div class="hero">
-        <img src="assets/illustration-hero-mobile.png" alt="Mobile Hero" />
-        <h1>
-          Get paid for the work <br />you <span>love</span><br />
-          to do.
-        </h1>
-        <p>
-          The 9-5 grind is so last century. We believe in living life on your
-          own terms. Whether you’re looking to escape the rat race or set up a
-          side hustle, we’ve got you covered.
-        </p>
-        <img src="assets/icons/icon-scroll.svg" alt="Scroll" />
+        <img
+          class="hero__mobile"
+          src="assets/illustration-hero-mobile.png"
+          alt="mobile hero"
+        />
+        <div class="hero__banner">
+          <img
+            class="hero__left"
+            src="assets/illustrations/illustration-hero-left.svg"
+            alt="left hero"
+          />
+          <div class="hero__container">
+            <img
+              class="hero__squiggle"
+              src="assets/squiggles/bg-hero-squiggle.svg"
+              alt="hero squiggle"
+            />
+            <h1>
+              Get paid for the work <br />you <span>love</span><br id="break" />
+              to do.
+            </h1>
+            <p>
+              The 9-5 grind is so last century. We believe in living life on
+              your own terms. Whether you’re looking to escape the rat race or
+              set up a side hustle, we’ve got you covered.
+            </p>
+          </div>
+          <img
+            class="hero__right"
+            src="assets/illustrations/illustration-hero-right.svg"
+            alt="right hero"
+          />
+        </div>
+        <img
+          class="hero__scroll"
+          src="assets/icons/icon-scroll.svg"
+          alt="Scroll"
+        />
       </div>
+
       <div class="illustrations">
-        <div>
+        <div id="in">
           <img
             src="assets/illustrations/illustration-passions.svg"
             alt="Passions"
           />
-          <h4>Indulge your passions</h4>
-          <p>
-            Your passions shouldn't be just for the weekend. Earn a living doing
-            what you love.
-          </p>
+          <div>
+            <h4>Indulge your passions</h4>
+            <p>
+              Your passions shouldn't be just for the weekend.<br />Earn a
+              living doing what you love.
+            </p>
+          </div>
         </div>
-        <div>
+        <div id="out">
           <img
             src="assets/illustrations/illustration-financial-freedom.svg"
             alt="Financial Freedom"
           />
-          <h4>Gain financial freedom</h4>
-          <p>
-            Start making money work for you. There’s nothing quite like earning
-            while you sleep.
-          </p>
+          <div>
+            <h4>Gain financial freedom</h4>
+            <p>
+              Start making money work for you.There’s<br />nothing quite like
+              earning while you sleep.
+            </p>
+          </div>
         </div>
-        <div>
+        <div id="in">
           <img
             src="assets/illustrations/illustration-lifestyle.svg"
             alt="Lifestyle"
           />
-          <h4>Choose your lifestyle</h4>
-          <p>
-            Own your daily schedule. Fancy a lie-in? Go for it! Take charge of
-            your week.
-          </p>
+          <div>
+            <h4>Choose your lifestyle</h4>
+            <p>
+              Own your daily schedule. Fancy a lie-in? Go for it!<br />Take
+              charge of your week.
+            </p>
+          </div>
         </div>
-        <div>
+        <div id="out">
           <img
             src="assets/illustrations/illustration-work-anywhere.svg"
             alt="Work Anywhere"
           />
-          <h4>Work from anywhere</h4>
-          <p>
-            Selling online means not being pinned down. Want to work AND travel?
-            Go for it!
-          </p>
+          <div>
+            <h4>Work from anywhere</h4>
+            <p>
+              Selling online means not being pinned down.<br />Want to work AND
+              travel? Go for it!
+            </p>
+          </div>
         </div>
       </div>
 
@@ -124,13 +160,11 @@
         </div>
       </div>
 
-      <form class="email">
-        <img src="assets/squiggles/bg-footer-squiggle.svg" />
+      <form class="email" onsubmit="return false">
         <h3>Get notified when we launch</h3>
         <div class="email__container">
           <input
             id="email"
-            type="email"
             placeholder="email Address"
             class="email__container--1 email--border"
             contenteditable="true"
@@ -144,8 +178,9 @@
             Get notified
           </div>
         </div>
-      </div>
+      </form>
     </main>
   </body>
+
   <script src="index.js" type="text/javascript"></script>
 </html>

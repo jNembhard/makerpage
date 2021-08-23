@@ -3,7 +3,7 @@ function validateEmail(email) {
   return regEx.test(email);
 }
 
-function validate() {
+function validate(event) {
   const $result = $("#result");
   const email = $("#email").val();
   const $email = $("#email");

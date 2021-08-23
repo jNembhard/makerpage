@@ -1,0 +1,102 @@
+.email {
+  width: 100%;
+  margin-bottom: 164px;
+  text-align: center;
+  background-image: url("../assets/squiggles/bg-footer-squiggle.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 center;
+  background-size: 156% auto;
+
+  @include tablet {
+    background-position: top 0 right -120px;
+    background-size: 156% auto;
+    border: 1px solid transparent;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin: 0 23.5px 31px;
+    @include tablet {
+      margin-top: 40px;
+    }
+  }
+
+  .email__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+      flex-direction: row;
+      margin-bottom: 30px;
+    }
+
+    h6 {
+      font-size: 12px;
+      line-height: 25px;
+      color: $error-color;
+      position: absolute;
+      left: 58px;
+      z-index: 1;
+
+      @include tablet {
+        left: 165px;
+        margin-top: 80px;
+      }
+    }
+
+    .email--border {
+      border-radius: 30px;
+    }
+
+    .email__container--1 {
+      width: 327px;
+      height: 48px;
+      background-color: $secondary-color;
+      text-align: left;
+      text-indent: 18px;
+      font-weight: $font-bold;
+      color: $title-color;
+    }
+
+    .email__container--2 {
+      background-color: $primary-color;
+      color: $secondary-color;
+      font-size: 15px;
+      font-weight: $font-bold;
+      margin-top: 24px;
+      width: 327px;
+      height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      @include tablet {
+        width: 140px;
+        height: 48px;
+        margin-top: 0;
+        margin-left: 16px;
+      }
+
+      &:hover {
+        background-color: $bg-color;
+        color: $title-color;
+        border: 2px solid $primary-color;
+      }
+    }
+  }
+}
+
+input {
+  border-style: none;
+}
+
+.border--success {
+  border: 2px solid $primary-color;
+}
+
+.border--error {
+  border: 2px solid $error-color;
+}
